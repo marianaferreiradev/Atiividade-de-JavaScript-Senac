@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+
+    <script>
+        //Crie um programa em JavaScript que permita ao usuário inserir os valores dos três lados de um triângulo. ​
+        let valor_1=prompt('Digite o lado 1')
+        let valor_2=prompt('Digite o lado 2')
+        let valor_3=prompt('Digite o lado 3')
+        
+
+        if( valor_1 === valor_2 && valor_2 === valor_3){
+            document.write('Triângulo equilátero')
+        } 
+        
+        else if (valor_1 === valor_2 || valor_1 === valor_3 || valor_2 === valor_3) {
+            document.write('triangulo isósceles.');
+            
+        }
+        
+        else {
+            document.write('triangulo escaleno.');
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Nativas</title>
+
+    <script>
+        //Crie um programa que leia dois números inteiros e qual operação deseja fazer com os números (soma, subtração, multiplicação ou divisão) No final exibir os números digitados, a operação escolhida e o resultado.
+        
+        let valor_1 = parseInt(prompt('Digite o primeiro numero: ',''));
+        let valor_2 = parseInt(prompt('Digite o segundo numero: ',''));
+
+        let operacao = prompt('Digite a operação desejada\n+) soma\n-) Subtração\n/) Divisão\n *)Multiplicação','');
+
+        let nome;//guarda a variável com nome da operação
+        let conta;//guarda a operação desejada
+
+        function operacoes() {
+            switch(operacao) {
+            case '+':
+                conta = valor_1 + valor_2;
+                nome = 'soma';
+                break;
+            case '-':
+                conta = valor_1 - valor_2;
+                nome = 'subtração';
+                break;
+            case '/':
+                conta = valor_1 / valor_2;
+                nome = 'Divisão';
+                break;
+            case '*':
+                conta = valor_1 * valor_2;
+                nome = 'Multiplicação';
+                break;
+            default:
+                alert('Operação inválida\n recarregue a pagina e tente novamente')
+        }
+        }
+        operacoes();
+        document.write('Primeiro Valor: ' + valor_1);
+        document.write('<br>Segundo valor: ' + valor_2);
+        document.write('<br>Operação escolhida: ' + nome);
+        document.write('<br>Resultado: ' + '<font color=blue>' + conta + '</font>');
+
+        
+    </script>
+</head>
+<body>
+
+    
+</body>
+</html>

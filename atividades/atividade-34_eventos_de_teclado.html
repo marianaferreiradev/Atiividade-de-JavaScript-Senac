@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de mouse</title>
+</head>
+<body>
+
+    <style>
+        .imagem{
+            width: 600px;
+        }
+    </style>
+    <h1>Exemplos de eventos de mouse</h1>
+
+    <img id="imagem" src="imagens/pc_1.jpg" class="imagem">
+    <br>
+
+
+   <script>
+
+    let imgAtual = "imagens/pc_2.jpg";
+    let imgAnterior = "imagens/pc_1.jpg";
+
+        document.onkeydown =function (mudar){
+      if(mudar.key=="Enter"){
+        document.getElementById("imagem").src = "imagens/pc_2.jpg";
+      }
+
+    }
+
+
+   </script>
+
+ 
+</body>
+</html>

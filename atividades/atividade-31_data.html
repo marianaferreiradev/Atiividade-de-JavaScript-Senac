@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+
+<body>
+    <script>
+        //Imprima o dia, o mês e o ano de acordo com o sistema operacional
+
+
+        let data = new Date();
+
+        let dia = data.getDay();//Retona o dia da semana começando com 0
+
+        let diaDoMes = data.getDate(); //dia do mês 
+
+        let mes = data.getMonth();  // mês de Janeiro a Dezembro
+
+        let ano = data.getFullYear(); // ano completo
+
+        let diaDaSemana, mesAtual; // dia da semana e mês atual
+
+        switch (dia) {
+
+            case 0:
+                diaDaSemana = "Domingo";
+                break;
+            case 1:
+                diaDaSemana = 'Segunda-Feira';
+                break;
+
+            case 2:
+                diaDaSemana = "Terça-Feira";
+                break;
+
+            case 3:
+                diaDaSemana = "Quarta-Feira";
+                break;
+
+            case 4:
+                diaDaSemana = "Quinta-Feira";
+                break;
+
+            case 5:
+                diaDaSemana = "Sexta-Feira";
+                break;
+
+            case 6:
+                diaDaSemana = "Sábado";
+                break;
+            default:
+                break;
+        }
+
+        switch (mes) {
+
+            case 0:
+                mesAtual = "Janeiro";
+                break;
+            case 1:
+                mesAtual = 'Fevereiro';
+                break;
+
+            case 2:
+                mesAtual = "Março";
+                break;
+
+            case 3:
+                mesAtual = "Abril";
+                break;
+
+            case 4:
+                mesAtual = "Maio";
+                break;
+
+            case 5:
+                mesAtual = "Junho";
+                break;
+
+            case 6:
+                mesAtual = "Julho";
+                break;
+            case 7:
+                mesAtual = "Agosto";
+                break;
+            case 8:
+                mesAtual = "Setembro";
+                break;
+            case 9:
+                mesAtual = "Outubro";
+                break;
+            case 10:
+                mesAtual = "Novembro";
+                break;
+            case 11:
+                mesAtual = "Dezembro";
+                break;
+            default:
+                break;
+        }
+
+        document.write(diaDaSemana + "," + " " + diaDoMes + " " + mesAtual + " de " + ano);
+
+    </script>
+    </script>
+</body>
+
+</html>

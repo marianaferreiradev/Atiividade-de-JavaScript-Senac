@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+
+    <script>
+        //Você está desenvolvendo um sistema de atendimento ao cliente para uma empresa de suporte técnico. O sistema deve receber um número de ticket de suporte e fornecer informações sobre o status desse ticket. Os possíveis status de um ticket são os seguintes:​
+        //Aberto​
+        //Em andamento​
+        //Resolvido​
+        //Fechado
+
+
+        let ticket = parseInt(prompt('Digite aqui o numero do seu ticket: '));
+
+        switch (ticket) {
+            case 1:
+                document.write('Status do Ticket: Aberto');
+                break;
+
+            case 2:
+                document.write('Status do Ticket: Em Andamento');
+                break;
+
+            case 3:
+                document.write('Status do Ticket: Resolvido');
+                break;
+
+            case 4:
+                document.write('Status do Ticket: Fechado');
+                break;
+
+            default:
+
+                document.write('Ticket Inválido');
+
+                break;
+}
+
+
+    </script>
+    
+</body>
+</html>

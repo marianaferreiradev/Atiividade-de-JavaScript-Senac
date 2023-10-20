@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de mouse</title>
+</head>
+<body>
+
+    <style>
+        .imagem{
+            width: 600px;
+        }
+    </style>
+    <h1>Exemplos de eventos de mouse</h1>
+
+    <img id="imagem" src="imagens/pc_1.jpg" class="imagem">
+    <br>
+    <button onclick="mudar()">Mais imagens</button>
+   
+
+
+   <script>
+
+    let imgAtual = "imagens/pc_2.jpg";
+    let imgAnterior = "imagens/pc_1.jpg";
+
+    function mudar(){
+        document.getElementById("imagem").src=imgAtual;
+        let aux = imgAtual;// serve como auxiliar pra trocar uma imagem por outra 
+        imgAtual=imgAnterior;
+        imgAnterior= aux;
+
+    }
+
+
+   </script>
+
+ 
+</body>
+</html>

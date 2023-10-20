@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+
+    <script>
+        //Crie um programa que leia o nome do aluno e 4 notas, no final exibir o nome do aluno as quatro notas, a média e se a média for maior ou igual a 7,0 aprovado caso contrário reprovado.​
+
+        let nome=prompt('Nome:')
+        let nota_1=prompt('Nota 1:')
+        let nota_2=prompt('Nota 2:')
+        let nota_3=prompt('Nota 3:')
+        let nota_4=prompt('Nota 4:')
+        let media=(nota_1 + nota_2 + nota_3 + nota_4)/4;
+
+        document.write('Nome:' + nome)
+
+        console.log(media)
+
+         document.write('<br>1° nota: ' + nota_1);
+         document.write('<br>2° nota: ' + nota_2);
+         document.write('<br>3° nota: ' + nota_3);
+         document.write('<br>4° nota: ' + nota_4);
+         document.write('<br>Média: ' + media);
+
+         if(media >=7){
+            document.write('<br> Situação:<font color= blue>APROVADO');
+            } /*SE A NOTA FOR MAIOR QUE A MÉDIA =7*/
+
+        else
+            {
+                document.write('<br> Situação: <font color= blue>REPROVADO');
+        }
+
+
+    </script>
+    
+</body>
+</html>

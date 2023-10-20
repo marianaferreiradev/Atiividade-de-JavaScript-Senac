@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos-&& (E)</title>
+</head>
+<body>
+
+    <script>
+
+        /*Crie um programa que pede a idade de um usuário e verifica se ele é maior de 18 anos e se tem autorização dos pais. Se ambas as condições forem verdadeiras, exiba "Pode entrar", caso contrário, exiba "Não pode entrar".*/
+
+        let idade=prompt('Digite sua idade');
+        let autoriza=prompt('Tem autorização dos pais?');
+
+        if(idade >='18' && autoriza=="sim"){
+            document.write( idade +'<font color="blue"> Pode entrar  </font>');
+        }
+
+        else{
+            document.write(idade +'<font color="red"> NÃO pode entrar  </font>');
+        }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        //Crie você um programa que use o comando switch, descreva o enunciado.
+       // Digite o dia da semana que desea marcar sua tatuagem
+
+       let nome=prompt("Digite seu nome");
+       let idade=prompt("Digite sua idade");
+       let agenda=prompt("Digite o dia que deseja (segunda a sexta)")
+       let agenda_semana;
+
+       switch(agenda){
+        case 1:
+            agenda_semana = ("Segunda");
+            break;
+        
+        case 2:
+        agenda_semana = ("Terça");
+            break;
+
+        case 3:
+        agenda_semana = ("Quarta");
+            break;
+
+        case 4:
+        agenda_semana = ("Quinta");
+            break;
+
+        case 5:
+        agenda_semana = ("Sexta");
+            break;
+
+        default:
+        agenda_semana = ("Indisponível");
+        
+
+       }
+
+       document.write("Nome: " +nome + '<br>')
+       document.write("Idade: " +idade + '<br>')
+       document.write("Seu dia foi agendado para: " +agenda_semana + '<br>')
+        
+
+    </script>
+    
+</body>
+</html>

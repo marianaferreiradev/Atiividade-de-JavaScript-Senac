@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_34.css">
+
+    <title>javascript</title>
+</head>
+<body>
+
+    <script>
+         // Função para incrementar o contador
+
+         function incrementarContador() {
+
+        // Obtém o valor atual da caixa de texto, converte para número e incrementa
+        let contadorInput = document.getElementById('contador');
+        let valorAtual = parseInt(contadorInput.value);
+        valorAtual++;
+        contadorInput.value = valorAtual;
+
+    }
+
+        function decrementarContador() {
+
+        // Obtém o valor atual da caixa de texto, converte para número e decrementa
+
+        let contadorInput = document.getElementById('contador');
+        let valorAtual = parseInt(contadorInput.value);
+        valorAtual--;
+        contadorInput.value = valorAtual;
+    }
+
+    </script>
+
+    <div id="container">
+        <h1>Manipulação de DOM com JavaScrip</h1>
+        <h2>Contador:</h2>
+
+        <div><input disabled="disabled" class="caixa_texto" type="text" id="contador" value="0"></div>
+
+        <button class="btn" id="incrementar" onclick="incrementarContador()">Incrementar</button>
+        <button class="btn" id="decrementar" onclick="decrementarContador()">Decrementar</button>
+
+        <h3>Desenvolvedor: Mariana Ferreira</h3>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Enunciado: Situação Aluno!
+        Desenvolva um script que interaja com o usuário por meio de prompts, solicitando o nome de um aluno e sua nota. 
+        O script avaliará se a nota é maior ou igual a 7 e, com base nessa avaliação, exibirá a mensagem 'Aluno: [nome do aluno] - Nota: [nota] >>APROVADO<<' em azul se o aluno for aprovado, ou 'Aluno: [nome do aluno] - Nota: [nota] >>REPROVADO<<' em vermelho se o aluno for reprovado.*/
+
+        let nome= prompt('Digite seu nome');
+        let nota=prompt('Digite sua nota');
+
+        if(nota >= "7"){
+            document.write(' Aluno: '  + nome + '<br>Nota: '+ nota +'<font color= blue><br>APROVADO </font>');
+            } /*SE A NOTA FOR MAIOR QUE A MÁDIA =7*/
+
+            else
+            {
+            document.write(' Aluno: '  +  nome +  '<br> Nota ' + nota + '<font color= red> <br>REPROVADO</font>');
+        }
+
+    </script>
+</body>
+</html>

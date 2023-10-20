@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+
+    <script>
+        //Crie um programa que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de custo receberá um  acréscimo de acordo com um percentual informado pelo usuário.​
+
+        let valor_custo=parseFloat(prompt('Valor do custo:'));
+        let percentual_venda=parseFloat(prompt('Percentual:'));
+    
+        let venda = valor_custo + (percentual_venda/ 100) * valor_custo;
+
+        let lucro = venda - valor_custo;
+
+        document.write('Valor de custo: ' + "<strong>" + valor_custo + "</strong> <br>");
+        document.write('Percentual de venda: ' + "<strong>" + percentual_venda + "</strong> %<br>");
+        document.write('Valor de venda: ' +  "<strong>" +venda +  "</strong><br>");
+        document.write('Lucro: ' + "<font color='red'> <strong>"  + lucro + "</strong></font>");
+
+
+    </script>
+    
+</body>
+</html>

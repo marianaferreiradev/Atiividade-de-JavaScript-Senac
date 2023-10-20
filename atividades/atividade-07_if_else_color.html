@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If, Else e color</title>
+</head>
+<body>
+
+    <script>
+
+        /*Enunciado: Cor de fundo!
+        Desenvolva um script em que interage com o usuário, solicitando que ele insira o nome de uma cor em inglês. O script verificará se a cor inserida é igual a 'yellow' e, se for o caso, alterará o plano de fundo da página para essa cor, exibindo a mensagem 'Muito bem, [cor], é uma linda cor!' em um título grande. Caso contrário, se a cor inserida for diferente de 'yellow', o script mostrará a mensagem 'Lamento, [cor], não é uma cor legal!' em um título menor*/
+
+        let color =prompt('Insira uma cor em inglês');
+
+        if ( color == 'yellow'){
+            document.write(' Muito bem, ' + '<body bgColor=yellow>' + color + ' é uma linda cor');
+            }
+
+        else 
+        {
+            document.write('Lamento, a cor  '  + color  + ' não é uma cor legal');
+        }
+
+    </script>
+    
+</body>
+</html>

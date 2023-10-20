@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+</head>
+
+<body>
+
+    <!--Crie um programa usado o eventos em javascript para ligar e desligar uma lâmpada​-->
+
+    <h2>Ligar e desligar lâmpada</h2>
+    <img id=lampada src="imagens/desligada.png">
+
+    <input onclick="ligar()" type="radio" name="lampada">Ligar
+
+
+    <input onclick="desligar()" type="radio" name="lampada">Desligar
+
+
+    <script>
+        function ligar() {
+            document.getElementById("lampada").src="imagens/ligada.png";
+        }
+
+        function desligar() {
+            document.getElementById("lampada").src = "imagens/desligada.png";
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

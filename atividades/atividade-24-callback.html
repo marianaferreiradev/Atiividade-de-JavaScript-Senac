@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+
+    <script>
+
+        let nome=prompt("Informe seu nome:");
+        let idade=prompt("Informe sua idade:");
+
+        document.write('Nome:' +nome +'<br>');
+        document.write('Idade:' +idade +'<br>')
+
+        function Mensagem(){
+            alert ('Seus dados foram enviados')
+        }
+    </script>
+
+    <button id="botao" onclick= 'Mensagem()'>Mensagem enviada</button>
+    
+</body>
+</html>
